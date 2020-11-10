@@ -4,10 +4,10 @@ This branch contains an example of a complex codespace with a large collection o
 and tools which together form an environment where a machine learning application can be developed
 with little to no initial setup effort needed.
 
-This codespace was not created manually, but
-[fetched](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/python-3-anaconda)
-from the [microsoft/vscode-dev-containers](https://github.com/microsoft/vscode-dev-containers)
-repository, which contains codespaces for various types of projects and programming lanaguages.
+This codespace was not created from scratch, but based on the
+[python-3-anaconda](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/python-3-anaconda)
+codespace from the [microsoft/vscode-dev-containers](https://github.com/microsoft/vscode-dev-containers)
+repository, where codespaces for various types of projects and programming languages are available.
 Before setting up your own codespace configuration, it is always a good idea to look for a
 publicly-available one which already has at least part of your needs covered (open source FTW!).
 If you are lucky enough, you may even find a codespace which already has everything you want &mdash;
