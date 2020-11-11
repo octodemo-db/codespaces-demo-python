@@ -5,8 +5,8 @@ and tools which together form an environment where a machine learning applicatio
 with little to no initial setup effort needed.
 
 This codespace was not created from scratch, but based on the
-[python-3-anaconda](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/python-3-anaconda)
-codespace from the [microsoft/vscode-dev-containers](https://github.com/microsoft/vscode-dev-containers)
+[`python-3-anaconda`](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/python-3-anaconda)
+codespace from the [`microsoft/vscode-dev-containers`](https://github.com/microsoft/vscode-dev-containers)
 repository, where codespaces for various types of projects and programming languages are available.
 Before setting up your own codespace configuration, it is always a good idea to look for a
 publicly-available one which already has at least part of your needs covered (open source FTW!).
