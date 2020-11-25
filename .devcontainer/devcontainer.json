@@ -2,22 +2,33 @@
     "name": "Anaconda (Python 3)",
     "image": "ghcr.io/octodemo/container-python-miniconda:0",
 
+    "mounts": [
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+        "source=/usr/bin/docker,target=/usr/bin/docker,type=bind",
+    ],
+
     // Set *default* container specific settings.json values on container create.
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
+
         "python.pythonPath": "/opt/conda/bin/python",
+
         "python.linting.pylintEnabled": false,
         "python.linting.enabled": false,
         "python.linting.mypyEnabled": false,
         "python.linting.pycodestyleEnabled": true,
-        "python.dataScience.alwaysTrustNotebooks": true,
+
+        // Trust the Notebooks in this repo
+        "jupyter.alwaysTrustNotebooks": true,
     },
 
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
     ],
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "sudo /opt/conda/bin/conda install --name base seaborn matplotlib -y",
+    "postCreateCommand": "sudo /opt/conda/bin/conda install --name base seaborn matplotlib -y"
 }
