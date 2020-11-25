@@ -1,10 +1,9 @@
 {
     "name": "Anaconda (Python 3)",
-    "image": "ghcr.io/octodemo/container-python-miniconda:0",
 
-    "mounts": [
-        "source=/usr/bin/docker,target=/usr/bin/docker,type=bind",
-        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+    // Using Docker compose here as we want to bind mount the docker socket and binary to the container
+    "dockerComposeFile": [
+        "docker-compose.yml"
     ],
 
     // Set *default* container specific settings.json values on container create.
