@@ -1,6 +1,6 @@
 {
     "name": "Anaconda (Python 3)",
-    "image": "ghcr.io/octodemo-db/github-pyml-development-container:latest",
+    "image": "ghcr.io/octodemo/container-python-minconda:0",
 
     // Set *default* container specific settings.json values on container create.
     "settings": {
