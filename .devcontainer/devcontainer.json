@@ -3,8 +3,8 @@
     "image": "ghcr.io/octodemo/container-python-miniconda:0",
 
     "mounts": [
-        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
         "source=/usr/bin/docker,target=/usr/bin/docker,type=bind",
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
     ],
 
     // Set *default* container specific settings.json values on container create.
