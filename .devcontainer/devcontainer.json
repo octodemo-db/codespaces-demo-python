@@ -1,12 +1,8 @@
 {
     "name": "Anaconda (Python 3)",
 
-    // Using Docker compose here as we want to bind mount the docker socket and binary to the container
-    "dockerComposeFile": [
-        "docker-compose.yml"
-    ],
-    "service": "app",
-    
+    "image": "ghcr.io/octodemo/container-python-miniconda:latest",
+
     // Set *default* container specific settings.json values on container create.
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
@@ -25,8 +21,7 @@
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
         "ms-python.python",
-        "ms-toolsai.jupyter",
-        "ms-azuretools.vscode-docker"
+        "ms-toolsai.jupyter"
     ],
 
     // Use 'postCreateCommand' to run commands after the container is created.
